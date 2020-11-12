@@ -4,7 +4,7 @@ ______________________
 ## is nmap scanner
 
 _______________________
-### is network scanning interface creat by python3 i working on it sine October 2020 I want to improve it if you can help me to improve I will love to my website https://fikrado.ml
+is network scanning interface creat by python3 i working on it sine October 2020 I want to improve it if you can help me to improve I will love to my website https://fikrado.ml
 ### Find Fikrado on :
 [![Github](https://img.shields.io/badge/Github-fikrado-yellow?style=for-the-badge&logo=github)](https://github.com/fikrado)
 [![Instagram](https://img.shields.io/badge/IG-%40mr__yahye-red?style=for-the-badge&logo=instagram)](https://www.instagram.com/mr__yahe)
