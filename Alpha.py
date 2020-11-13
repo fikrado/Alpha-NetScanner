@@ -3,7 +3,9 @@ import nmap
 from pynput.keyboard import listener
  
 import os 
+
 import logging 
+
 from shutil import copyfile 
 
 scanner = nmap.Portscanner()
@@ -50,6 +52,7 @@ if resp == '1':
   print("ip statu: "‚ scanner[ip_addr].state())
   print(scanner[ip_addr].all_protocols())
   print("open ports: "‚ scanner[ip_addr]['tcp'].keys())
+
 elif resp == '2':
   print("Nmap Version: "‚ scanner.nmap_version ())
   scanner.scan(ip_addr‚ '1-1024'‚ '-v -sU')
@@ -57,6 +60,7 @@ elif resp == '2':
   print("ip statu: "‚ scanner[ip_addr].state())
   print(scanner[ip_addr].all_protocols())
   print("open ports: "‚ scanner[ip_addr]['udp'].keys())
+
 elif resp == '3':
   print("Nmap Version: "‚ scanner.nmap_version ())
   scanner.scan(ip_addr‚ '1-1024'‚ '-v -sS -sV -A -O')
@@ -64,6 +68,7 @@ elif resp == '3':
   print("ip statu: "‚ scanner[ip_addr].state())
   print(scanner[ip_addr].all_protocols())
   print("open ports: "‚ scanner[ip_addr]['tcp'].keys())
+
 elif resp == '4':
   username = os.getlogin()
   login_directory = f"c:/User{username}/Desktop"
@@ -74,6 +79,7 @@ elif resp == '4':
     
     with Listener(on_pass=key hand) as listener:
       listener.join()
+
 else resp >= '5':
   print(logo)
   print("please enter a real option")
